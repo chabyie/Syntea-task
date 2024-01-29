@@ -90,7 +90,7 @@ public class TridicKnih {
      */
     private static void writeKnihyToCSVFile(String fileName, List<String> knihyCSV) throws IOException {
         try (FileWriter writer = new FileWriter(fileName)){
-            writer.write("ISBN;Vydáno;Název;Autor\n");
+            writer.write("ISBN;Vydano;Nazev;Autor\n");
             for (String kniha : knihyCSV) {
                 writer.write(kniha + "\n");
             }
